@@ -1,9 +1,57 @@
 <!DOCTYPE html>
 <html lang='en'>
 	<head>
-		<link rel="stylesheet" type="text/css" href="css/style.css"/>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="javascript/game.js"></script>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> 
+		
 	</head>
-	<body>
+	<body style='background-image: url(assets/images/background-pattern-design-31.jpg)'>
+	<div class='container'>
+		<div class='row'>
+			<div id= 'GameTitle' class= 'col-xs-4' style='background-color: #c77028;color: white; margin: 15px'>
+				<h1><strong>Crystal Collector!</strong></h1>
+			</div>
+		</div>
+
+		<div class='row'>
+			<div id= 'Instructions' class= 'col-lg-6' style='background-color: #fbe6cd;color: green; margin: 15px; line-height: 200%; padding-bottom: 75px'>
+				<p>You will be given a random number at the start of the game.</p>
+				<p>There are four crystals below. By clicking on a crystal you will add a specific number of points to your total below.</p>
+				<p>You win the game by matching your total score to a random number, you lose the game if your total score goes above the random number</p>
+				<p>The value of each crystal is hidden from you until you click on it.</p>
+				<p>Each time when the game starts, the game will change the value of each crystal.</p>
+			</div>
+
+		</div>
+
+		<div class='row'>
+			<div id= 'RandDisplay' class= 'col-sm-3' style='background-color: #5bc980; color: green; margin: 15px; text-align: center;'>
+				<h1 id= 'TheRandomNumber'></h1>
+			</div>
+			<div id='WinLossCount' class= 'col-sm-2' style= 'background-color: #4afdfe; color: black;'>
+				<h3 id='Wins'>Your Win #</h3>
+				<h3 id='Losses'>Your Loss #</h3>
+			</div>
+
+		</div>
+
+		<div class='row'>
+			<button id= 'diamond1' class= "btn btn default diamond">diamond1</button>
+			<button id= 'diamond2' class= "btn btn default diamond">diamond2</button>
+			<button id= 'diamond3' class= "btn btn default diamond">diamond3</button>
+			<button id= 'diamond4' class= "btn btn default diamond">diamond4</button>
+			<button id= 'valuerefresh' class= "btn btn default">new game</button>
+
+		</div>
+		<div class='row'>
+			<div class= 'col-sm-3' style='background-color: blue; color: cyan; margin: 15px; text-align: center;'>
+				<div id='TotalScore'>
+				<h1 id='UserNumber'></h1>
+			</div>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
 
