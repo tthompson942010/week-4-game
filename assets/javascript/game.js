@@ -37,7 +37,7 @@ $(document).ready(function(){
 			Wins++
 			$('#Wins').html('Wins:' + Wins)
 			$('#Losses').html('Losses:' + Losses)
-			
+			Gamestart()	
 		
 	}
 		else {
@@ -45,6 +45,7 @@ $(document).ready(function(){
 			Losses++
 			$('#Wins').html('Wins:' + Wins)
 			$('#Losses').html('Losses:' + Losses)
+			Gamestart()
 		}
 
 	})
