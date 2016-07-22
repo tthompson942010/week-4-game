@@ -4,6 +4,7 @@
 
 
 $(document).ready(function(){
+	//reset/start game function
 	function Gamestart(){
 		 diamond1 = 1 + Math.floor(Math.random()*12)
 		 diamond2 = 1 + Math.floor(Math.random()*12)
@@ -18,13 +19,14 @@ $(document).ready(function(){
 		$('#diamond4').attr("value", diamond4);
 		$('#TheRandomNumber').html(RandTargNum);
 		$('#UserNumber').html(UserAdd);
+	//print variables to console
 	console.log(diamond1, diamond2, diamond3, diamond4, RandTargNum)
 
 
 	}
-
+	//start game
 	Gamestart()
-	
+	//function to add diamond values to UserAdd, determine win/loss
 	$('.diamond').click(function(){
 			UserAdd = Number(UserAdd)+Number($(this).val())
 			console.log(UserAdd)
